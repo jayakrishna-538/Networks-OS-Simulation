@@ -97,3 +97,54 @@ The priority level determines the order in which the threads are scheduled to pr
 The resources assigned to each thread determine the maximum number of requests it can handle simultaneously.
 
 The objective is to develop a scheduling algorithm that handles the transaction load.
+
+# Network Simulation Projects #
+
+This project contains three mini projects which aims to simulate network protocols.
+
+### Simplified OSPF Routing Protocol ###
+
+Implemented a simplified version of the OSPF (Open Shortest Path First) routing protocol using C/C++.
+
+This project includes:
+
+~~~
+Router Class: Defines a router with attributes such as unique ID, list of neighbors, and routing table.
+
+OSPF Algorithm: Uses Dijkstra's algorithm to calculate the shortest path to each router.
+
+Routing Simulation: Connects routers, updates routing tables, and simulates packet routing.
+
+Output: Displays the routing table for each router.
+~~~
+
+### CSMA/CA MAC Layer Simulation ###
+
+Developed a simulation of the MAC layer for a wireless network using the CSMA/CA (Carrier Sense Multiple Access with Collision Avoidance) protocol.
+
+Key features include:
+~~~
+Simulation Environment: Configurable number of nodes sharing a communication channel.
+
+Backoff Mechanism: Nodes use random backoff intervals before transmission attempts.
+
+Collision Detection: Detects and handles collisions with a random backoff period.
+
+Statistics: Tracks successful transmissions, collisions, and backoff attempts.
+~~~
+
+### HTTP Web Cache ###
+
+Created a basic HTTP web cache in C/C++ to store and retrieve recently accessed web pages with an LRU (Least Recently Used) eviction policy. 
+
+Components include:
+~~~
+Cache Data Structure: Stores a fixed number of web pages, using a linked list to manage access order.
+
+HTTP GET Requests: Uses socket programming to fetch pages from the web.
+
+Cache Management: Updates cache contents based on page access and eviction policy.
+
+User Interaction: Allows retrieval of cached pages and displays the order of cached pages.
+~~~
+
