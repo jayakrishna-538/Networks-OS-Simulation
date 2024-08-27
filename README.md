@@ -4,32 +4,23 @@ This repository encompasses a collection of six distinct projects, each of which
 
 
 
-# CBR_UDP vs FTP_TCP #
+# FTP Implementation using TCP Sockets #
 
-In this project, comparision of CBR traffic over UDP agent and FTP traffic over TCP agent is implemented.
+This project implements a File Transfer Protocol (FTP) using TCP sockets in C++. 
 
-TCP agents considered for FTP traffic are:
+The server waits for a connection from the client, and once connected, the client can perform various file operations such as PUT, GET, MPUT, and MGET.
 
-~~~
-1. TCP HighSpeed
+These operations allow the transfer of .txt and .c files between the client and server, with support for overwriting files based on user input.
 
-2. TCP Vegas
-         
-3. TCP Scalable
-~~~
-Dumbell topology is considered for this project.
+The IP address and port number are provided via command-line arguments.
 
+# Wireshark Analysis of Video Uploading to YouTube #
 
-# Network Communication and File System Optimization #
+We identified and described key protocols and their packet formats.
 
-This project consists of two mini projects related to file systems and Encrypted Network Communication.
+Explained the sequence of messages and any handshaking involved.
 
-One is secured message communication using Base64 encryption.
-
-The other one is file system optimization. In this, several file allocation strategies are implemented and compared for their performance with different settings.
-
-Also Demand paging system has been implemented to provide further optimization for the allocation methodologies.
-
+Calculated metrics like throughput, RTT, and packet loss at different times of the day.
 
 # Inter Process Communication #
 
